@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+}
+
+h1{
+  text-align: center;
+  margin: 30vh auto 10px auto; /*ezzel igazítoma  szöveget középre*/
+  padding: 0;
+  font-weight: 300;
+  font-size: 30px;
+  max-width: 520px;
+  text-transform: uppercase;
+  color: #006837;
+}
+
+@media screen and (max-width:520px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+div > span{
+  display: block; /*ezzel töröm új sorba*/
+ 
+}
+div > span:nth-child(2){ /*második span legyen csak italic style*/
+font-weight: 300;
+font-style: italic;
+}
+
+div{
+  padding: 20px;
+  width: 100%;
+  max-width: 520px;/*on viewports smaller than 520px the width szövegben így van megadvah */
+  background-color: #f9c582;
+  margin: 0 auto; /*ezzel állítom a desktop nézetet középre, míg mobil nézet nem változik*/
+  color: #467745;
+}
+input{
+  margin-top: 20px;
+  height: 64px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #98a991;
+  outline: none;
+}
+button{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 21px;
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  color: #006837;
+  background-color: #f9c582;
+  
+}
